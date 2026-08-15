@@ -65,9 +65,30 @@ export default function Footer({ navigate, onShowCredits }) {
             © 2026 · Unpacking the Self · Educational Project
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <button onClick={onShowCredits} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem', fontFamily: "'Inter', sans-serif", padding: 0, transition: 'color 0.2s', minHeight: '36px' }} onMouseEnter={e => { e.currentTarget.style.color = 'rgba(255,255,255,0.75)'; }} onMouseLeave={e => { e.currentTarget.style.color = 'rgba(255,255,255,0.4)'; }}>
-              Credits
-            </button>
+          <button
+            onClick={onShowCredits}
+            style={{
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              color: 'rgba(255,255,255,0.55)',
+              fontSize: '0.75rem',
+              fontFamily: "'Inter', sans-serif",
+              padding: 0,
+              transition: 'color 0.2s',
+              minHeight: '36px',
+              textDecoration: 'underline',
+              textUnderlineOffset: '3px'
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.color = '#fff';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.color = 'rgba(255,255,255,0.55)';
+            }}
+          >
+            View Credits →
+          </button>
             <div style={{ display: 'flex', gap: '4px' }}>
               {dimensions.map(d => (<div key={d.id} style={{ width: '7px', height: '7px', borderRadius: '50%', background: d.color, opacity: 0.5 }}/>))}
             </div>
