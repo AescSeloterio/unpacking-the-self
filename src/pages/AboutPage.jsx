@@ -102,10 +102,10 @@ export default function AboutPage({ navigate }) {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem' }}>
             {[
-            { label: 'Philosophical', text: 'The self as subject — the "I" that has experiences, makes choices, and seeks meaning.', color: 'var(--navy)' },
-            { label: 'Psychological', text: 'The self as a dynamic system of traits, schemas, memories, and emotional patterns.', color: 'var(--teal)' },
-            { label: 'Sociological', text: 'The self as constructed in relationship — shaped by culture, language, and social roles.', color: '#D97706' },
-            { label: 'Neuroscientific', text: 'The self as an emergent property of brain processes, continuously revised and updated.', color: '#7C3AED' },
+            { label: 'Philosophical', text: 'The philosophical self focuses on questions about who we are, why we exist, and what makes us unique. Philosophers explore identity, consciousness, freedom, and the meaning of life.', color: 'var(--navy)' },
+            { label: 'Psychological', text: 'The psychological self focuses on our thoughts, emotions, personality, behavior, and experiences. It explains how our experiences and feelings influence the way we see ourselves.', color: 'var(--teal)' },
+            { label: 'Sociological', text: 'The sociological self explains how society, family, friends, culture, and social groups influence who we become. Our identity can develop through our interactions with other people.', color: '#D97706' },
+            { label: 'Neuroscientific', text: 'The neuroscientific self looks at how the brain and nervous system contribute to our thoughts, emotions, memories, personality, and sense of identity.', color: '#7C3AED' },
         ].map(item => (<div key={item.label} style={{ background: 'var(--bg)', borderRadius: 'var(--radius-md)', padding: '1rem 1.25rem', borderLeft: `3px solid ${item.color}`, transition: 'transform 0.22s ease' }} onMouseEnter={e => { e.currentTarget.style.transform = 'translateX(5px)'; }} onMouseLeave={e => { e.currentTarget.style.transform = 'translateX(0)'; }}>
                 <div style={{ fontWeight: 700, fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: item.color, marginBottom: '0.3rem' }}>{item.label}</div>
                 <div style={{ color: 'var(--text-2)', fontSize: '0.875rem', lineHeight: 1.6 }}>{item.text}</div>
