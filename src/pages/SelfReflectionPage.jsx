@@ -6,6 +6,9 @@ export default function SelfReflectionPage({ navigate }) {
     const [answers, setAnswers] = useState([null, null, null]);
     const [visible, setVisible] = useState(false);
     useEffect(() => { const t = setTimeout(() => setVisible(true), 30); return () => clearTimeout(t); }, []);
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [step]);
     const dimSteps = selectedDim ? (dimensionReflections[selectedDim] ?? []) : [];
     const currentQ = step >= 1 && step <= 3 ? dimSteps[step - 1] : null;
     // Quiz state (Discover Your Strongest Dimension)
@@ -32,7 +35,7 @@ export default function SelfReflectionPage({ navigate }) {
     return (<div style={{ paddingTop: '68px', minHeight: '100vh', background: 'var(--bg)', opacity: visible ? 1 : 0, transition: 'opacity 0.45s ease' }}>
 
       {/* Step 0: Dimension selector */}
-      {step === 0 && (<div>
+      {step === 0 && (<div style={{ animation: 'fadeInUp 0.45s ease both' }}>
           <section style={{ background: 'var(--surface)', padding: 'clamp(3.5rem,7vw,6rem) 2rem', textAlign: 'center', borderBottom: '1px solid var(--border)' }}>
             <div className="section-label" style={{ marginBottom: '0.7rem' }}>Self-Reflection</div>
             <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(2.2rem,5vw,3.8rem)', color: 'var(--text-1)', margin: '0 0 0.75rem', lineHeight: 1.15 }}>
