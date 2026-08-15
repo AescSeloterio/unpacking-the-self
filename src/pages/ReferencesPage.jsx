@@ -65,7 +65,18 @@ export default function ReferencesPage() {
                 </div>
                 <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1rem', color: 'var(--text-1)', margin: '0 0 0.35rem', lineHeight: 1.35 }}>{ref.title}</h3>
                 <div style={{ color: tabColors[activeTab], fontSize: '0.78rem', fontWeight: 600, marginBottom: '0.75rem' }}>{ref.author}</div>
-                <p style={{ color: 'var(--text-2)', fontSize: '0.84rem', lineHeight: 1.7, margin: 0 }}>{ref.desc}</p>
+                <p
+                  style={{
+                    color: 'var(--text-2)',
+                    fontSize: '0.84rem',
+                    lineHeight: 1.7,
+                    margin: 0,
+                    overflowWrap: 'anywhere',
+                    wordBreak: 'break-word'
+                  }}
+                >
+                  {ref.desc}
+                </p>
               </div>))}
           </div>
         </div>
