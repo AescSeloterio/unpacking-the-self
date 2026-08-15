@@ -13,9 +13,16 @@ export default function Footer({ navigate, onShowCredits }) {
         <div className="footer-grid" style={{ marginBottom: '3rem' }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1rem' }}>
-              <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <span style={{ color: '#C9A227', fontSize: '14px', fontWeight: 800, fontFamily: "'Playfair Display', serif" }}>U</span>
-              </div>
+              <img
+                src="/favicon-clean.png"
+                alt="Unpacking the Self"
+                style={{
+                  width: '48px',
+                  height: '48px',
+                  objectFit: 'cover',
+                  borderRadius: '10px'
+                }}
+              />
               <div>
                 <div style={{ fontFamily: "'Playfair Display', serif", color: '#fff', fontSize: '0.95rem', fontWeight: 700 }}>Unpacking the Self</div>
                 <div style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.05em' }}>A Learning Website · Understanding the Self</div>

@@ -25,9 +25,16 @@ export default function Navbar({ current, navigate, darkMode, toggleDark }) {
       <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 1.5rem', height: '68px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         {/* Logo */}
         <button onClick={() => navigate({ page: 'home' })} style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: '#0F3460', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-            <span style={{ color: '#C9A227', fontSize: '14px', fontWeight: 800, fontFamily: "'Playfair Display', serif" }}>U</span>
-          </div>
+              <img
+                src="/favicon-clean.png"
+                alt="Unpacking the Self"
+                style={{
+                  width: '48px',
+                  height: '48px',
+                  objectFit: 'cover',
+                  borderRadius: '10px'
+                }}
+              />
           <div style={{ textAlign: 'left' }}>
             <div style={{ fontFamily: "'Playfair Display', serif", fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-1)', lineHeight: 1.1 }}>Unpacking the Self</div>
             <div style={{ fontSize: '0.62rem', color: 'var(--text-3)', letterSpacing: '0.05em', lineHeight: 1 }}>ACT & BSCS · Understanding the Self</div>

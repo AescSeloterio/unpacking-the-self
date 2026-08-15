@@ -18,7 +18,7 @@ export default function CreditsModal({ onClose }) {
         },
         {
             role: 'Documentation',
-            members: ['[Documentation Name]', '[Documentation Name]'],
+            members: ['[In Progress]'],
         },
         {
             role: 'Testing & Quality',
