@@ -45,7 +45,16 @@ export default function CreditsModal({ onClose }) {
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '2rem', paddingRight: '2rem' }}>
           <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: '#0F3460', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1rem' }}>
-            <span style={{ color: '#C9A227', fontSize: '18px', fontWeight: 800, fontFamily: "'Playfair Display', serif" }}>U</span>
+              <img
+                src="/favicon-clean.png"
+                alt="Unpacking the Self"
+                style={{
+                  width: '48px',
+                  height: '48px',
+                  objectFit: 'cover',
+                  borderRadius: '10px'
+                }}
+              />
           </div>
           <div className="section-label" style={{ marginBottom: '0.4rem' }}>Project Credits</div>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.3rem,2.5vw,1.75rem)', color: 'var(--text-1)', margin: '0 0 0.5rem' }}>
