@@ -18,7 +18,7 @@ export default function CreditsModal({ onClose }) {
         },
         {
             role: 'Documentation',
-            members: ['In Progress'],
+            members: ['Marcus Austria', 'Danielo Canubas', 'Brylle Vidal', 'Canle Bahao'],
         },
         {
             role: 'Testing & Quality',

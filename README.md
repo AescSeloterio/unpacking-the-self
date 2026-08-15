@@ -25,7 +25,10 @@ A simple, responsive learning website for the Understanding the Self performance
 - Ian Humphrey I. Seloterio
 
 ## Documentation
-- In Progress
+- Marcus Austria
+- Danielo Canubas
+- Brylle Vidal
+- Canle Bahao
 
 
 
