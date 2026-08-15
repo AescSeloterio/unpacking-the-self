@@ -6,11 +6,11 @@ export default function CreditsModal({ onClose }) {
         },
         {
             role: 'UI/UX Design',
-            members: ['Jhon Russel Amaya', 'Lovely Ompad ', 'John Lloyd Baladhay'],
+            members: ['Jhon Russel Amaya', 'Lovely Ompad ', 'John Lloyd Baladhay', 'Clark Jared Manigos'],
         },
         {
             role: 'Development',
-            members: ['Ian Humphrey I. Seloterio', 'Clark Jared Manigos'],
+            members: ['Ian Humphrey I. Seloterio'],
         },
         {
             role: 'Content & Research',
