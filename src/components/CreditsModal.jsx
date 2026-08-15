@@ -14,7 +14,7 @@ export default function CreditsModal({ onClose }) {
         },
         {
             role: 'Content & Research',
-            members: ['Benedict Declanan', 'Jian Reyson'],
+            members: ['Benedict Declanan', 'Jian Reyson', 'Sherylyn Tagsip'],
         },
         {
             role: 'Documentation',
