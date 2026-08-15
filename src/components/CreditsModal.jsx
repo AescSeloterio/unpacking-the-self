@@ -22,7 +22,7 @@ export default function CreditsModal({ onClose }) {
         },
         {
             role: 'Testing & Quality',
-            members: ['Clark Jared Manigos', 'Andrea Faith Marce', 'Jolly Mae Neduelan'],
+            members: ['Clark Jared Manigos', 'Andrea Faith Marce', 'Jolly Mae Neduelan', 'Ian Humphrey I. Seloterio'],
         },
     ];
     return (<div style={{ position: 'fixed', inset: 0, zIndex: 500, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1.25rem' }} onClick={e => { if (e.target === e.currentTarget)
