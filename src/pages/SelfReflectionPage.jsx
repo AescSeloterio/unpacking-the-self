@@ -101,7 +101,7 @@ export default function SelfReflectionPage({ navigate }) {
               {!quizSubmitted ? (<div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                   {quizQuestions.map((q, qi) => (<div key={q.id} className="quiz-card" style={{ background: 'var(--bg)', borderRadius: 'var(--radius-lg)', padding: '1.5rem', border: '1px solid var(--border)' }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1rem' }}>
-                        <div style={{ width: '26px', height: '26px', borderRadius: '50%', background: 'var(--navy)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.75rem', fontWeight: 700, flexShrink: 0 }}>{qi + 1}</div>
+                        <div style={{ width: '26px', height: '26px', borderRadius: '50%', background: 'var(--teal)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.75rem', fontWeight: 700, flexShrink: 0 }}>{qi + 1}</div>
                         <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '0.95rem', color: 'var(--text-1)', margin: 0, lineHeight: 1.4 }}>{q.question}</h3>
                       </div>
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>

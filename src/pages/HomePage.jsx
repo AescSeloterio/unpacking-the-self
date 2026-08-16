@@ -84,7 +84,7 @@ export default function HomePage({ navigate, completed }) {
       </section>
 
       {/* ── Self-Discovery Journey ────────────────────────── */}
-      <section style={{ background: 'var(--navy)', padding: 'clamp(3.5rem,6vw,5rem) 2rem' }}>
+      <section style={{ background: '#0F3460', padding: 'clamp(3.5rem,6vw,5rem) 2rem' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <div className="section-label" style={{ color: 'rgba(201,162,39,0.9)', marginBottom: '0.6rem' }}>Your Journey</div>
@@ -96,11 +96,11 @@ export default function HomePage({ navigate, completed }) {
             { step: '02', label: 'UNDERSTAND', desc: 'Explore the seven dimensions that together form a complete picture of who you are.', icon: '📖', color: '#0D9488' },
             { step: '03', label: 'EXPLORE', desc: 'Dive deep into each dimension through guided lessons and everyday examples.', icon: '🌐', color: '#7C3AED' },
             { step: '04', label: 'REFLECT', desc: 'Apply your understanding to your own life through meaningful self-reflection activities.', icon: '💭', color: '#DC2626' },
-        ].map((s, i) => (<div key={s.step} style={{ padding: '2rem 1.75rem', borderLeft: i > 0 ? '1px solid rgba(255,255,255,0.08)' : 'none', position: 'relative' }}>
+        ].map((s, i) => (<div key={s.step} style={{ padding: '2rem 1.75rem', borderLeft: i > 0 ? '1px solid rgba(255,255,255,0.16)' : 'none', position: 'relative' }}>
                 <div style={{ fontSize: '0.65rem', fontWeight: 700, color: s.color, letterSpacing: '0.15em', marginBottom: '0.6rem' }}>STEP {s.step}</div>
                 <div style={{ fontSize: '1.5rem', marginBottom: '0.6rem' }}>{s.icon}</div>
                 <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.15rem', fontWeight: 700, color: '#fff', margin: '0 0 0.6rem' }}>{s.label}</h3>
-                <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.82rem', lineHeight: 1.75, margin: 0 }}>{s.desc}</p>
+                <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.82rem', lineHeight: 1.75, margin: 0 }}>{s.desc}</p>
                 {i < 3 && <div style={{ position: 'absolute', right: '-1px', top: '50%', width: '6px', height: '6px', borderRadius: '50%', background: 'rgba(255,255,255,0.2)', transform: 'translateY(-50%)' }}/>}
               </div>))}
           </div>
@@ -150,7 +150,7 @@ export default function HomePage({ navigate, completed }) {
             { icon: '🌟', title: 'A Sense of Purpose', desc: "Knowing what gives you meaning and energy helps you navigate life's transitions with direction and courage.", color: 'var(--gold)' },
         ].map(c => (<div key={c.title} style={{ background: 'var(--bg)', border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)', padding: '2rem', transition: 'all 0.3s ease' }} onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(15,52,96,0.08)'; }} onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
                 <div style={{ fontSize: '2.2rem', marginBottom: '1rem' }}>{c.icon}</div>
-                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.2rem', color: 'var(--text-1)', margin: '0 0 0.75rem' }}>{c.title}</h3>
+                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.2rem', color: '#fff', margin: '0 0 0.75rem' }}>{c.title}</h3>
                 <p style={{ color: 'var(--text-2)', lineHeight: 1.8, fontSize: '0.9rem', margin: 0 }}>{c.desc}</p>
                 <div style={{ marginTop: '1.25rem', width: '36px', height: '2.5px', borderRadius: '2px', background: c.color }}/>
               </div>))}
@@ -170,7 +170,7 @@ export default function HomePage({ navigate, completed }) {
       </section>
 
       {/* ── Final CTA ─────────────────────────────────────── */}
-      <section style={{ background: 'var(--navy)', padding: 'clamp(4rem,7vw,6rem) 2rem', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ background: '#0F3460', padding: 'clamp(4rem,7vw,6rem) 2rem', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
         <div className="orb" style={{ width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(13,148,136,0.25), transparent)', top: '-200px', left: '-150px' }}/>
         <div className="orb" style={{ width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(201,162,39,0.12), transparent)', bottom: '-150px', right: '-100px' }}/>
         <div style={{ position: 'relative', maxWidth: '580px', margin: '0 auto' }}>

@@ -193,14 +193,14 @@ export default function AboutPage({ navigate }) {
       </section>
 
       {/* Think About It */}
-      <section style={{ background: 'var(--navy)', padding: 'clamp(3rem,6vw,5rem) 2rem', textAlign: 'center' }}>
+      <section style={{ background: '#0F3460', padding: 'clamp(3rem,6vw,5rem) 2rem', textAlign: 'center' }}>
         <div style={{ maxWidth: '580px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.15em', color: '#C9A227', textTransform: 'uppercase', marginBottom: '1.25rem' }}>Think About It</div>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.5rem,3vw,2.2rem)', color: '#fff', margin: '0 0 1rem', fontStyle: 'italic', lineHeight: 1.4 }}>
             "How would you describe yourself<br />beyond your name?"
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.5)', lineHeight: 1.8, margin: '0 0 2rem', fontSize: '0.9rem' }}>
-            Take a moment. Think about what makes you, <em>you</em> — beyond labels, roles, and what others expect.
+            Take a moment. Think about what makes you, <span style={{ fontStyle: 'italic' }}>you</span> — beyond labels, roles, and what others expect.
           </p>
           <button style={{ background: '#C9A227', border: '2px solid #C9A227', color: '#0F172A', padding: '0.9rem 2.25rem', borderRadius: '50px', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer', transition: 'all 0.25s ease', minHeight: '48px', letterSpacing: '0.03em' }} onClick={() => navigate({ page: 'reflection' })} onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(201,162,39,0.35)'; }} onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
             REFLECT →

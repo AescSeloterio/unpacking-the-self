@@ -5,6 +5,7 @@
 :root {
   --navy: #0F3460;
   --navy-dark: #091a35;
+  --navy-bg: #0F3460;
   --teal: #0D9488;
   --teal-light: rgba(13,148,136,0.1);
   --gold: #C9A227;
@@ -31,8 +32,11 @@
   --text-2: #C9D1D9;
   --text-3: #8B949E;
   --border: #30363D;
+
   --navy: #79AADF;
   --navy-dark: #5B90CC;
+  --navy-bg: #0F3460;
+
   --teal: #2DD4BF;
   --gold: #E8C84A;
   --teal-light: rgba(45,212,191,0.1);
