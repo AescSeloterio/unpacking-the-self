@@ -30,6 +30,11 @@ A simple, responsive learning website for the Understanding the Self performance
 - Brylle Vidal
 - Canle Bahao
 
+## Presentation
+- Jalilah Rivera
+- Raselo Godinez
+- Brylle Vidal
+- Canle Bahao
 
 
 ## Technologies Used
