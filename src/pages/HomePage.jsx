@@ -150,7 +150,7 @@ export default function HomePage({ navigate, completed }) {
             { icon: '🌟', title: 'A Sense of Purpose', desc: "Knowing what gives you meaning and energy helps you navigate life's transitions with direction and courage.", color: 'var(--gold)' },
         ].map(c => (<div key={c.title} style={{ background: 'var(--bg)', border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)', padding: '2rem', transition: 'all 0.3s ease' }} onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(15,52,96,0.08)'; }} onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
                 <div style={{ fontSize: '2.2rem', marginBottom: '1rem' }}>{c.icon}</div>
-                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.2rem', color: '#fff', margin: '0 0 0.75rem' }}>{c.title}</h3>
+                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.2rem', color: 'var(--text-1)', margin: '0 0 0.75rem' }}>{c.title}</h3>
                 <p style={{ color: 'var(--text-2)', lineHeight: 1.8, fontSize: '0.9rem', margin: 0 }}>{c.desc}</p>
                 <div style={{ marginTop: '1.25rem', width: '36px', height: '2.5px', borderRadius: '2px', background: c.color }}/>
               </div>))}
